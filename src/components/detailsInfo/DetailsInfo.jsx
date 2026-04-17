@@ -8,20 +8,36 @@ import { FaVideo } from "react-icons/fa";
 import toast from "react-hot-toast";
 
 const DetailsInfo = ({ expectedFriend }) => {
+  const saveLog = (type) => {
+    const newLog = {
+      id: Date.now(),
+      name: expectedFriend.name,
+      type: type, // "call" | "text" | "video"
+      time: new Date().toLocaleString(),
+    };
+
+    const existingLogs = JSON.parse(localStorage.getItem("logs")) || [];
+
+    localStorage.setItem("logs", JSON.stringify([newLog, ...existingLogs]));
+  };
+
   const handleCall = () => {
+    saveLog("Call");
     toast.success(`Calling ${expectedFriend.name} `);
   };
 
   const handleText = () => {
+    saveLog("Text");
     toast.success(`Texting ${expectedFriend.name} `);
   };
 
   const handleVideo = () => {
+    saveLog("Video");
     toast.success(`Starting video call with ${expectedFriend.name} `);
   };
 
   return (
-    <div className="w-9/12 mx-auto flex gap-6 my-20">
+    <div className="w-11/12 md:w-10/12 lg:w-9/12 mx-auto flex flex-col md:flex-row gap-6 my-20">
       <div className="space-y-4 flex-1">
         <div className="card bg-base-200 w-full ">
           <div className="text-center bg-white shadow-xl rounded-2xl space-y-3 p-6">
