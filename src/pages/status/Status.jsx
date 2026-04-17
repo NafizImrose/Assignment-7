@@ -52,8 +52,8 @@ const Status = () => {
                 cx="50%"
                 cy="50%"
                 outerRadius={120}
+                innerRadius={95}
                 dataKey="value"
-                label
               >
                 {data.map((entry, index) => (
                   <Cell key={index} fill={COLORS[index]} />

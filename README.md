@@ -1,16 +1,47 @@
-# React + Vite
+# 📇 Friend Connect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Friend Connect is a simple and interactive web app that helps you keep track of your friends and your interactions with them. You can log calls, texts, and video chats, and visualize your communication patterns using a dashboard-style analytics view.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📝 Description
 
-## React Compiler
+This project is built to practice React concepts like routing, state management, local storage, and data visualization. It allows users to manage friend relationships and track how often they interact with each friend in a simple and meaningful way.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- React Router
+- Tailwind CSS
+- Recharts (for data visualization)
+- Local Storage (for saving logs)
+- React Icons
+
+---
+
+## ⭐ Key Features
+
+- 👥 **Friend Management**
+  View detailed profiles of friends with tags, bio, and contact tracking.
+
+- 📊 **Interaction Analytics**
+  Visualize your communication history using a pie/donut chart based on calls, texts, and video interactions.
+
+- 🕒 **Activity Timeline**
+  Track all your past interactions with timestamps in a clean timeline view.
+
+---
+
+## 🚀 Future Improvements
+
+- Add backend support for real database storage
+- Improve authentication system
+- Add reminders for overdue contacts
+
+---
+
+## 💡 Note
+
+This project is built for learning purposes and frontend practice. It demonstrates real-world React patterns in a simple and beginner-friendly way.
