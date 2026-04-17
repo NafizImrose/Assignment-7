@@ -82,7 +82,9 @@ const Timeline = () => {
 
       {/* Empty state */}
       {filteredLogs.length === 0 && (
-        <p className="text-center text-gray-500 mt-10">No activity found 😴</p>
+        <p className="text-center text-gray-500 mt-10 text-xl">
+          No activity found....
+        </p>
       )}
 
       {/* Logs */}

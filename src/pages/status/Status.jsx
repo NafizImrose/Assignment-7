@@ -42,7 +42,7 @@ const Status = () => {
       <p className="text-left mb-4">By Interaction Type</p>
 
       {logs.length === 0 ? (
-        <p className="text-gray-500">No data yet</p>
+        <p className="text-gray-500 text-xl">No data yet.....</p>
       ) : (
         <div className="w-full h-[400px]">
           <ResponsiveContainer>
