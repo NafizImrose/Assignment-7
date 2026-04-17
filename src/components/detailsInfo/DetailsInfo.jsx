@@ -5,8 +5,21 @@ import { RiNotificationSnoozeLine } from "react-icons/ri";
 import { MdCall } from "react-icons/md";
 import { MdTextsms } from "react-icons/md";
 import { FaVideo } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const DetailsInfo = ({ expectedFriend }) => {
+  const handleCall = () => {
+    toast.success(`Calling ${expectedFriend.name} `);
+  };
+
+  const handleText = () => {
+    toast.success(`Texting ${expectedFriend.name} `);
+  };
+
+  const handleVideo = () => {
+    toast.success(`Starting video call with ${expectedFriend.name} `);
+  };
+
   return (
     <div className="w-9/12 mx-auto flex gap-6 my-20">
       <div className="space-y-4 flex-1">
@@ -107,18 +120,27 @@ const DetailsInfo = ({ expectedFriend }) => {
         <div className="p-7 bg-white rounded shadow-xl mt-10">
           <p className="font-semibold mb-2">Quick Check-in</p>
           <div className="grid grid-cols-3 gap-10">
-            <div className="bg-base-300 py-6 flex text-xl flex-col rounded justify-center items-center">
+            <button
+              onClick={handleCall}
+              className="bg-base-300 py-6 flex text-xl flex-col rounded justify-center items-center"
+            >
               <MdCall />
               <p>Call</p>
-            </div>
-            <div className="bg-base-300 py-6 flex text-xl flex-col rounded justify-center items-center">
+            </button>
+            <button
+              onClick={handleText}
+              className="bg-base-300 py-6 flex text-xl flex-col rounded justify-center items-center"
+            >
               <MdTextsms />
               <p>Text</p>
-            </div>
-            <div className="bg-base-300 py-6 flex text-xl flex-col rounded justify-center items-center">
+            </button>
+            <button
+              onClick={handleVideo}
+              className=" bg-base-300 py-6 flex text-xl flex-col rounded justify-center items-center"
+            >
               <FaVideo />
               <p>Video</p>
-            </div>
+            </button>
           </div>
         </div>
       </div>
