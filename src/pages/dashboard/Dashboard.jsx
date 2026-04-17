@@ -1,9 +1,14 @@
-import React from "react";
+import React, { use } from "react";
+import DashText from "../../components/dashText/DashText";
+import DataLoad from "../../components/dataLoad/DataLoad";
 
-const Dashboard = () => {
+const Dashboard = ({ dataPromise }) => {
+  const data = use(dataPromise);
+
   return (
     <div>
-      <h1>Dashboard</h1>
+      <DashText></DashText>
+      <DataLoad data={data}></DataLoad>
     </div>
   );
 };
