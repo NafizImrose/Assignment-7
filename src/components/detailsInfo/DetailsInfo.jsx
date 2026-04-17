@@ -135,7 +135,7 @@ const DetailsInfo = ({ expectedFriend }) => {
 
         <div className="p-7 bg-white rounded shadow-xl mt-10">
           <p className="font-semibold mb-2">Quick Check-in</p>
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-3 gap-3 md:gap-10">
             <button
               onClick={handleCall}
               className="bg-base-300 py-6 flex text-xl flex-col rounded justify-center items-center"

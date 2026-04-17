@@ -34,7 +34,7 @@ const Status = () => {
   const COLORS = ["#244D3F", "#3B82F6", "#A855F7"];
 
   return (
-    <div className="w-8/12 mx-auto mt-10 text-center bg-white p-10 shadow-sm">
+    <div className="w-11/12 md:w-8/12 mx-auto mt-10 text-center bg-white p-10 shadow-sm">
       <h1 className="text-3xl text-left font-bold mb-8 text-[#244D3F]">
         Friendship Analytics
       </h1>
