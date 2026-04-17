@@ -64,9 +64,7 @@ const Timeline = () => {
 
   return (
     <div className="w-11/12 md:w-8/12 mx-auto mt-10">
-      <h1 className="text-3xl font-bold mb-5 text-[#244D3F]">
-        Activity Timeline
-      </h1>
+      <h1 className="text-3xl font-bold mb-5 text-[#244D3F]">Timeline</h1>
 
       {/* Dropdown Filter */}
       <div className="mb-6">
