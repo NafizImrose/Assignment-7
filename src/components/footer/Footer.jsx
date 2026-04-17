@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <footer className="footer footer-horizontal footer-center bg-[#244D3F] text-[#FFFFFF] rounded p-10">
         <div>
-          <h1 className="text-7xl">KeenKeeper</h1>
+          <h1 className="text-3xl md:text-5xl lg:text-7xl">KeenKeeper</h1>
           <p>
             Your personal shelf of meaningful connections. Browse, tend, and
             nurture the relationships that matter most.
@@ -15,7 +15,7 @@ const Footer = () => {
           <div>
             <h1>Social links</h1>
           </div>
-          <div className="grid grid-flow-col gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <aside className="text-[#FAFAFA] flex flex-col-reverse md:flex-row gap-4 md:gap-30">
+        <aside className="text-[#FAFAFA] flex flex-col-reverse md:flex-row gap-4 md:gap-10">
           <p>© 2026 KeenKeeper. All rights reserved.</p>
           <div
             className="flex gap-3
